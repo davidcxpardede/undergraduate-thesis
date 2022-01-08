@@ -16,6 +16,6 @@ int main()
     for (int i = 0; i < 5; i++)
         std::cout << arr1[i] << " ";
 
-    std::cout << endl << "You got a straight!";
+    std::cout << endl << "You got a royal straight!";
     return 0;
 }
