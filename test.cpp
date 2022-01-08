@@ -7,7 +7,9 @@ int main()
     std::cout << a << endl;
 
     int b = 3*5;
-    std::cout << b;
+    std::cout << b << endl;
     
+    int c = a + b;
+    std::cout << c;
     return 0;
 }
