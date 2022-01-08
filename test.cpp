@@ -10,6 +10,6 @@ int main()
     std::cout << b << endl;
     
     int c = a + b;
-    std::cout << c;
+    std::cout << "The sum is " << c;
     return 0;
 }
