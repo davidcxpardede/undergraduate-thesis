@@ -1,21 +1,35 @@
 #include <iostream>
 #include <array>
 #include <string>
+#include <cmath>
+
 using namespace std;
 
 int main()
 {
+    
+    // Defining all cards in the deck based on suits and values
+    
+    string suits[4] = {"Diamonds", "Clubs", "Hearts", "Spades"};
+    string values[13] = {"Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
 
-    string a = "2", b = "3", c = "4", d = "5", e = "6", f = "7", g = "8", h = "10", i = "Jack", j = "Queen", k = "King", l = "Ace";
+    int a, b;
 
-    string table1 = h, table2 = k, table3 = l;
-    string hand1 = i, hand2 = j;
+    // Asking the user for input of the cards values and suits
 
-    string arr1[5] = {table1, hand1, hand2, table2, table3};
+    cout << "What is the value of your card? ";
+    cin >> a;
 
-    for (int i = 0; i < 5; i++)
-        std::cout << arr1[i] << " ";
+    cout << "What is the suit of your card? ";
+    cin >> b;
 
-    std::cout << endl << "You got a royal straight!";
+    // Combining the values and suits into meaningful cards
+
+    string cards = values[a] + " of " + suits[b];
+
+    // Displaying the cards
+
+    cout << "Your card is the " << cards << "." << endl;
+
     return 0;
 }
