@@ -14,15 +14,19 @@ int main()
 
     // Declaring truly random variables to call from the array
     srand(time(0));
-    int a = rand() % 12;
-    int b = rand() % 3;
+    int v1, s1;
+    string v2, s2;
 
-    // Defining the cards from the combination of random value and suit
-    string cards = values[a] + " of " + suits[b];
+    for (int i = 0; i = 5; i++)
+    {
+        v1 = rand() % 12;
+        s1 = rand() % 3;
 
-    // Printing the cards
-    cout << "Your card is the " << cards << "." << endl;
+        v2[i] = v1;
+        s2[i] = s1;
+    }    
 
+    cout << v2 << endl << s2;
 
     return 0;
 }
