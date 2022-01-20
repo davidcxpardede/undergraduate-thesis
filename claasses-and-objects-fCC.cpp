@@ -7,27 +7,28 @@ class Book {
         string title;
         string author;
         int pages;
+
+        Book() {
+            title = "no title";
+            author = "no author";
+            pages = 0;
+        }
+
+        Book(string aTitle, string aAuthor, int aPages) {
+            title = aTitle;
+            author = aAuthor;
+            pages = aPages;
+        }
 };
 
 int main ()
 {
     // An object is an actual instance of a class.
-    Book book1;
-        book1.title = "The Lord of the Rings";
-        book1.author = "J. R. R. Tolkien";
-        book1.pages = 1000;
-
-    Book book2;
-        book2.title = "Sapiens: The Brief History of Humankind";
-        book2.author = "Yuval Noah Harari";
-        book2.pages = 700;
-
+    Book book1("LotR", "Tolkien", 1000);
+    Book book2("Sapiens", "Harai", 700);
     Book book3;
-        book3.title = "747: Queen of the Skies";
-        book3.author = "Joe Sutter";
-        book3.pages = 500;
-    
-    
+
+    cout << book3.title;
 
     return 0;
 }
