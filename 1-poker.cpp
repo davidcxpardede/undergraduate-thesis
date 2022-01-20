@@ -5,6 +5,16 @@
 
 using namespace std;
 
+/*
+
+PROJECT MILESTONE
+
+1. Assign random unique cards to two players (up to five) and to the community, totalling 9 (up to 15) cards dealt.
+2. Identify what hands each player has.
+3. Identify which player wins a round.
+*/
+
+
 int main()
 {
     cout << endl << "Welcome to the game of Poker created by David Pardede!" << endl;
@@ -29,7 +39,7 @@ int main()
     string playerOne[2], playerTwo[2];
 
         // Assigning the Hole Cards of First Player
-        cout << endl << "The hole cards of the first player are: " << endl;
+        cout << endl << "The cards of the first player are: " << endl;
         for (int a = 0; a < 2; a++) {
 
             values = rand() % 13;
@@ -49,7 +59,7 @@ int main()
         }
 
         // Assigning the Hole Cards of Second Player
-        // cout << endl << "The hole cards of the second player are: " << endl;
+        // cout << endl << "The cards of the second player are: " << endl;
         for (a = 0; a < 2; a++) {
 
             values = rand() % 13;
@@ -140,7 +150,6 @@ int main()
                     Pairs[c] = handsOne[a] + " and " + handsOne[b+1];
                     PairValues[c] = handsValues[a];
                     PairValues[c+1] = handsValues[b+1];
-                    cout << Pairs[c] << "\n \n";
                     c++;
                 }
             }
