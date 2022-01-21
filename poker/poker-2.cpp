@@ -9,6 +9,11 @@ int main()
                         "Ace of Hearts", "Two of Hearts", "Three of Hearts", "Four of Hearts", "Five of Hearts", "Six of Hearts", "Seven of Hearts", "Eight of Hearts", "Nine of Hearts", "Ten of Hearts", "Jack of Hearts", "Queen of Hearts", "King of Hearts",
                         "Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades", "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades", "Nine of Spades", "Ten of Spades", "Jack of Spades", "Queen of Spades", "King of Spades"};
 
+    string reference[52] = {"Ace of Diamonds", "Two of Diamonds", "Three of Diamonds", "Four of Diamonds", "Five of Diamonds", "Six of Diamonds", "Seven of Diamonds", "Eight of Diamonds", "Nine of Diamonds", "Ten of Diamonds", "Jack of Diamonds", "Queen of Diamonds", "King of Diamonds",
+                        "Ace of Clubs", "Two of Clubs", "Three of Clubs", "Four of Clubs", "Five of Clubs", "Six of Clubs", "Seven of Clubs", "Eight of Clubs", "Nine of Clubs", "Ten of Clubs", "Jack of Clubs", "Queen of Clubs", "King of Clubs",
+                        "Ace of Hearts", "Two of Hearts", "Three of Hearts", "Four of Hearts", "Five of Hearts", "Six of Hearts", "Seven of Hearts", "Eight of Hearts", "Nine of Hearts", "Ten of Hearts", "Jack of Hearts", "Queen of Hearts", "King of Hearts",
+                        "Ace of Spades", "Two of Spades", "Three of Spades", "Four of Spades", "Five of Spades", "Six of Spades", "Seven of Spades", "Eight of Spades", "Nine of Spades", "Ten of Spades", "Jack of Spades", "Queen of Spades", "King of Spades"};
+        
         /*  NOTES:
             Cards Indices based on Suits
             - cards[0] to cards[12] = Diamonds
@@ -64,33 +69,92 @@ int main()
                 cardsName[n] = {"Used"};
                 communityNum[a] = n;
             }
-        }
+        }   cout << "\n";
 
-    // IDENTIFYING THE PLAYER HANDS
+    // REARRANGING THE HANDS
     string handsName[7];
     int handsNum[7];
     for(a = 0; a < 2; a++) {
         handsName[a] = playerOneName[a];
         handsNum[a] = playerOneNum[a];
-        cout << handsNum[a] << " " << handsName[a] << "\n";
     }
     for(a = 0; a < 5; a++) {
         handsName[a+2] = communityName[a];
         handsNum[a+2] = communityNum[a];
-        cout << handsNum[a+2] << " " << handsName[a+2] << "\n";
     }
-    
-    int rank = 0;
 
+        // Rearranging the Cards Based on Suits
+   
+        int Diamonds[7] = {-1, -1, -1, -1, -1, -1, -1};
+        int Clubs[7] = {-1, -1, -1, -1, -1, -1, -1};
+        int Hearts[7] = {-1, -1, -1, -1, -1, -1, -1};
+        int Spades[7] = {-1, -1, -1, -1, -1, -1, -1};
+
+        for (a = 0; a < 7; a++) {
+            if(handsNum[a] < 13) {
+                Diamonds[a] = handsNum[a];
+            }   else if(handsNum[a] >= 13 && handsNum[a] < 26) {
+                Clubs[a] = handsNum[a];
+            }   else if(handsNum[a] >= 26 && handsNum[a] < 39) {
+                Hearts[a] = handsNum[a];
+            }   else if(handsNum[a] >= 39 && handsNum[a] < 52) {
+                Spades[a] = handsNum[a];
+            }   
+        }
+
+        // Rearranging the Cards Based on Values
+
+
+
+
+    // IDENTIFYING THE HANDS    
+    string rank = "High Card";
+
+    
         // Identifying Royal Flush
 
         // Identifying Straight Flush
 
         // Identifying Four of a Kind
 
+
+
         // Identifying Full House
 
         // Identifying Flush
+        int FlushD = 0;
+        int FlushC = 0;
+        int FlushH = 0;
+        int FlushS = 0;
+
+        for(a = 0; a < 7; a++) {
+            if (Diamonds[a] >= 0) {
+                FlushD++;
+            }
+            if(Clubs[a] >= 0) {
+                FlushC++;
+            }
+            if(Hearts[a] >= 0) {
+                FlushH++;
+            }
+            if(Spades[a] >= 0) {
+                FlushS++;
+            }
+        }
+
+        if(FlushD >=5) {
+            cout << "You have a Flush of Diamonds!";
+            rank = "Flush";
+        }   else if(FlushC >=5) {
+            cout << "You have a Flush of Clubs!";
+            rank = "Flush";
+        }   else if(FlushH >=5) {
+            cout << "You have a Flush of Hearts!";
+            rank = "Flush";
+        }   else if(FlushS >=5) {
+            cout << "You have a Flush of Spades!";
+            rank = "Flush";
+        }
 
         // Identifying Straight
 
@@ -101,6 +165,11 @@ int main()
         // Identifying One Pair
 
         // Identifying High Card
+        string HighCard[5];
+
+        if (rank == "High Card") {
+            cout << "You have a High Card!\n";
+        }
 
 
     // DETERMINING WHICH PLAYER HAS THE STRONGEST HANDS
