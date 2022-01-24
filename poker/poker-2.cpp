@@ -103,23 +103,46 @@ int main()
         }
 
         // Rearranging the Cards Based on Values
+        /* int handsValues[7];
+        for(a = 0; a < 7; a++) {
+            if(a == 0) {
+                handsValues[a] = handsNum[a];
+            }
+            else {
+                if(handsValues[a] > handsValues[a-1]) {
+                    handsValues[a-1] = handsNum[a];
+                    handsValues[a] = handsNum[a-1];            
+                } else {
+                    handsValues[a] = handsNum[a];
+                }
+            }
+        } 
+        
+        cout << endl;
 
-
-
+        cout << "The cards in ascending order of the values are:\n";
+        for(a = 0; a < 7; a++) {
+            cout << "1. " << reference[handsValues[a]] << endl;
+        } */
 
     // IDENTIFYING THE HANDS    
     string rank = "High Card";
 
     
         // Identifying Royal Flush
+        string RoyalFlush;
+
+        
 
         // Identifying Straight Flush
+        string StraightFlush;
 
         // Identifying Four of a Kind
-
+        string FourofaKind;
 
 
         // Identifying Full House
+        string FullHouse;
 
         // Identifying Flush
         int FlushD = 0;
@@ -157,12 +180,13 @@ int main()
         }
 
         // Identifying Straight
-
+        string Straight;
         // Identifying Three of a Kind
-
+        string ThreeofaKind;
         // Identifying Two Pair
-
+        string TwoPair;
         // Identifying One Pair
+        string OnePair;
 
         // Identifying High Card
         string HighCard[5];
