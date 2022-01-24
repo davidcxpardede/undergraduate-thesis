@@ -1,3 +1,0 @@
-1. Instead of randomly assigning from a list of cards, it should be shuffled randomly first and then assign the cards like how a dealer would do.
-2. To shuffle randomly, each of the element inside the array is given random number ranging from 1 to 52.
-3. The cards are dealt by putting one for each player, burn one, another one for each player, burning one, placing the first three community cards, burning one, placing the fourth community cards, burning one, and then placing the final community cards.
