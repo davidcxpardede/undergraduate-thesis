@@ -1,0 +1,17 @@
+Introduction to Pointers in C++
+
+int = 4 bytes
+char = 1 bytes
+float = 4 bytes
+
+int a;
+int *p;
+p = &a;
+a = 5;
+
+cout << p;
+cout &a
+&p;
+*p; (dereferencing)
+
+
