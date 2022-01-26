@@ -4,17 +4,13 @@ using namespace std;
 int main()
 {
     int a = 10;
-    int *p;      // pointers
+    int *p;
     p = &a;      // address of a
 
-    cout << p << endl << *p << endl << &a;
-    
-    *p = 12;     // dereferencing
-    cout << endl << *p << endl;
+    cout << "*p = " << *p << endl;
+    cout << "p = " << p << endl;
+    cout << "a = " << a << endl;
+    cout << "&a = " << &a << endl;
 
-    int b = 20;
-    *p = b;
-
-    cout << b << endl << *p << endl << p << endl << a << endl;
     return 0;
 }
