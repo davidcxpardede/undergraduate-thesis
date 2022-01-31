@@ -18,7 +18,7 @@
  */
 #include <iostream>
 #include <assert.h>
-#include <CImg.h>
+#include <../CImg/CImg.h>
 #include <CCfits/CCfits>
  
 #include <tuple>

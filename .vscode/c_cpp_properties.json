@@ -4,18 +4,29 @@
             "name": "Win32",
             "includePath": [
                 "C:\\msys64\\mingw64\\include",
-                "${workspaceFolder}/pointers/CImg",
-                "D:\\Applications\\C++\\ccfits\\CCfits-2.6"
+                "D:\\Applications\\C++\\ccfits\\CCfits-2.6",
+                "${workspaceFolder}/CImg"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+            "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4
