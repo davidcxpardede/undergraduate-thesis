@@ -16,9 +16,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include <iostream>
 #include <assert.h>
-#include <../CImg/CImg.h>
+#include <CImg.h>
 #include <CCfits/CCfits>
  
 #include <tuple>
@@ -82,7 +83,7 @@ readFile(CImg<float> & inImg, const string & inFilename, long * outBitPix = 0)
   image.read(imgData);
   cimg_forXY(inImg, x, y) { inImg(x, inImg.height() - y - 1) = imgData[inImg.offset(x, y)]; }  
 } 
- 
+
 void
 thresholdOtsu(const CImg<float> & inImg, long inBitPix, CImg<float> * outBinImg)
 {
