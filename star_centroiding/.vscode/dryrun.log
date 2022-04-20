@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/davidcxpardede/learn_opencv/src/star_centroiding'
+make: Leaving directory '/home/davidcxpardede/learn_opencv/src/star_centroiding'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
