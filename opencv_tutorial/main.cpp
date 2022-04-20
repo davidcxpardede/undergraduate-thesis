@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char** argv )
 {
 
-    Mat image;
+    cv::Mat image;
     image = imread("./picture.jpg");
     if ( !image.data )
     {
