@@ -8,8 +8,7 @@ main:
 	g++ main.cpp -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -o main -I/usr/local/include/opencv4
 
 clean:
-	-rm main
-	-rm ./data/result/*.jpg
+	-clear
 
 run:
 	-./main
