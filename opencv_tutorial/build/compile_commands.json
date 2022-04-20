@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/davidcxpardede/undergraduate-thesis/opencv_tutorial/build",
-  "command": "/usr/bin/g++   -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/opencvtest.dir/main.cpp.o -c /home/davidcxpardede/undergraduate-thesis/opencv_tutorial/main.cpp",
-  "file": "/home/davidcxpardede/undergraduate-thesis/opencv_tutorial/main.cpp"
-}
-]
