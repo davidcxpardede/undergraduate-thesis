@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Apr 20 08:50:26 2022
+# Make data base, printed on Wed Apr 20 12:06:29 2022
 
 # Variables
 
@@ -49,7 +49,7 @@ VSCODE_CWD = /mnt/d/Applications/Visual Studio Code/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/davidcxpardede/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/d/Applications/Python/Scripts/:/mnt/d/Applications/Python/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Applications/MATLAB/runtime/win64:/mnt/d/Applications/MATLAB/bin:/mnt/d/Applications/Fortran/FTN95:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Applications/Git Windows/Git/cmd:/mnt/c/msys64/mingw64/bin:/mnt/d/Applications/C++/cmake/cmake-3.22.2-windows-x86_64/bin:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/d/Applications/OpenCV/opencv/build/x64/vc15/bin:/mnt/d/Applications/OpenCV/opencv/build/x64/vc15/lib:/mnt/d/Applications/CMake/bin:/mnt/c/Users/David Pardede/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/David Pardede/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/David Pardede/AppData/Local/Microsoft/WindowsApps:/mnt/d/Applications/Visual Studio Code/Microsoft VS Code/bin:/snap/bin
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/d/Applications/Python/Scripts/:/mnt/d/Applications/Python/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Applications/MATLAB/runtime/win64:/mnt/d/Applications/MATLAB/bin:/mnt/d/Applications/Fortran/FTN95:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/120/DTS/Binn/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Applications/Git Windows/Git/cmd:/mnt/c/msys64/mingw64/bin:/mnt/d/Applications/C++/cmake/cmake-3.22.2-windows-x86_64/bin:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/d/Applications/OpenCV/opencv/build/x64/vc15/bin:/mnt/d/Applications/OpenCV/opencv/build/x64/vc15/lib:/mnt/d/Applications/CMake/bin:/mnt/c/Users/David Pardede/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/David Pardede/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/David Pardede/AppData/Local/Microsoft/WindowsApps:/mnt/d/Applications/Visual Studio Code/Microsoft VS Code/bin:/snap/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -73,7 +73,7 @@ HOME = /home/davidcxpardede
 # environment
 LOGNAME = davidcxpardede
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -147,9 +147,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 42522): 11 files, no impossibilities.
+# . (device 2064, inode 42522): 10 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -199,12 +199,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 209 B / avg = 11 B
-# current buf: size = 8162 B / used = 209 B / count = 19 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 201 B / avg = 11 B
+# current buf: size = 8162 B / used = 201 B / count = 18 / avg = 11 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 21 / hit rate = 14%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Wed Apr 20 08:50:26 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
+# Finished Make data base on Wed Apr 20 12:06:29 2022
 
  
