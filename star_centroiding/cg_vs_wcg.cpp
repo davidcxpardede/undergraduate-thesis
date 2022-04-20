@@ -1,12 +1,11 @@
 // STAR CENTROIDING METHOD
-// WEIGHTED CENTER OF GRAVITY
+// CENTER OF GRAVITY VERSUS WEIGHTED CENTER OF GRAVITY METHOD
 
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    // WEIGHTED CENTER OF GRAVITY EQUATION
     
     // Defining Variables
 
@@ -44,24 +43,45 @@ int main() {
     // Wij = (A/(2*pi*sigmax*sigmay)) * exp (-((i-xc)^2/(2*sigmax^2))-((j-yc)^2/(2*sigmay^2)))
     
     cout << endl;
+    // Center of Gravity Method
 
-    // Defining Sums
+        // Defining Sums
         for (j = 0; j < nJ; j++) {
             for (i = 0; i < nI; i++) {
-                iG = (i+1) * G[i][j]^2;
-                jG = (j+1) * G[i][j]^2;
+                iG = (i+1) * G[i][j];
+                jG = (j+1) * G[i][j];
                 sigmaIG += iG;
                 sigmaJG += jG;
-                sigmaG += G[i][j]^2;
+                sigmaG += G[i][j];
             }
         }
 
-    // Defining Equations
+        // Defining Equations
 
-    xc = sigmaIG/sigmaG;
-    yc = sigmaJG/sigmaG;
+        xc = sigmaIG/sigmaG;
+        yc = sigmaJG/sigmaG;
 
-    cout << "\nThe center of gravity is (" << xc << ", " << yc << ")." << endl << endl;
+        cout << "\nThe center of gravity with the Center of Gravity Method is (" << xc << ", " << yc << ")." << endl;
+    
+    // Weighted Center of Gravity Method
+    
+        // Defining Sums
+            for (j = 0; j < nJ; j++) {
+                for (i = 0; i < nI; i++) {
+                    iG = (i+1) * G[i][j]^2;
+                    jG = (j+1) * G[i][j]^2;
+                    sigmaIG += iG;
+                    sigmaJG += jG;
+                    sigmaG += G[i][j]^2;
+                }
+            }
+
+        // Defining Equations
+
+        xc = sigmaIG/sigmaG;
+        yc = sigmaJG/sigmaG;
+
+        cout << "\nThe center of gravity with the Weighted Center of Gravity Method is (" << xc << ", " << yc << ")." << endl << endl;
 
     return 0;
 }

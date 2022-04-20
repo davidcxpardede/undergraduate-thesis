@@ -1,1 +1,0 @@
-This file is for running the program in C++ language.

@@ -1,7 +1,7 @@
 {
+    "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "iostream": "cpp",
-        "ostream": "cpp"
+        "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Disabled"
 }
