@@ -43,6 +43,7 @@ int main() {
     // Wij = (A/(2*pi*sigmax*sigmay)) * exp (-((i-xc)^2/(2*sigmax^2))-((j-yc)^2/(2*sigmay^2)))
     
     cout << endl;
+    
     // Center of Gravity Method
 
         // Defining Sums
