@@ -1,12 +1,16 @@
 #include <stdio.h>
-#include <opencv4/opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc.hpp>
+#include <iostream>
 
 using namespace cv;
+using namespace std;
 int main(int argc, char** argv )
 {
 
     Mat image;
-    image = imread("./ironman.jpg");
+    image = imread("./picture.jpg");
     if ( !image.data )
     {
         printf("No image data \n");
