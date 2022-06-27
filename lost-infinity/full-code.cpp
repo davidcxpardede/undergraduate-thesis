@@ -128,7 +128,7 @@ thresholdOtsu(const CImg<float> & inImg, long inBitPix, CImg<float> * outBinImg)
 }
  
 /**
- * Removes all white neighbours arond pixel from whitePixels
+ * Removes all white neighbours around pixel from whitePixels
  * if they exist and adds them to pixelsToBeProcessed.
  */
 void

@@ -31,9 +31,8 @@ int main() {
     
     int whitePixels = 0;
     int blackPixels = 0;
-    int i, j;
-    for(j = 0; j < rows; j++) {
-        for(i = 0; i < columns; i++) {
+    for(int j = 0; j < rows; j++) {
+        for(int i = 0; i < columns; i++) {
             if (img.at<int>(j, i) != 0) {
                 whitePixels++;
             } else {
@@ -46,17 +45,14 @@ int main() {
     cout << "The number of the black pixels are: " << blackPixels << "." << endl;
     cout << "The number of pixels are: " << (whitePixels + blackPixels) << "." << endl;
     
-    // Calculating the Number of Stars
+    // Grouping White Pixels
+    
+    
 
-    /* for(j=0;j<rows;j++) {
-        for(i=0;i<columns;i++) {
-            while (img.at<int>(j,i) != 0) {
-                i++;
-                j++; // Logic to be Found
+    
+    // Calculating Number of Stars (White Pixels Group)
+    // Calculating Each Star Positions
 
-            }
-        }
-    } */
 
 
     return 0;
